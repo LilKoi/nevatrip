@@ -17,5 +17,6 @@ class TypeTIcketController extends Controller
         $type = new TypeTicket();
         $type->fill($request->toArray());
         $type->save(); 
+        return $type;
     }
 }

@@ -14,12 +14,7 @@ class RequestTicket extends FormRequest
         return [
                 'event_id'=> 'required|integer',
                 'event_date'=> 'required|date',
-                'ticket_adult_price'=> 'required|integer',
-                'ticket_adult_quantity'=> 'required|integer',
-                'ticket_kid_price'=> 'required|integer',
-                'ticket_kid_quantity'=> 'required|integer',
-                'equal_price'=> 'required|integer',
-                'type_ticket'=> 'nullable|integer'
+                'type_id'=> 'nullable|integer'
         ];
     }
 }

@@ -17,12 +17,8 @@ class CreateTicketTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('event_id');
             $table->date('event_date');
-            $table->mediumInteger('ticket_adult_price');
-            $table->tinyInteger('ticket_adult_quantity');
-            $table->mediumInteger('ticket_kid_price');
-            $table->tinyInteger('ticket_kid_quantity');
+            $table->bigInteger('type_id');
             $table->bigInteger('barcode');
-            $table->bigInteger('equal_price');
             $table->timestamps();
         });
     }
